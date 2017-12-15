@@ -26,6 +26,9 @@ export function configureStore(initialState?: RootState) {
       store.replaceReducer(nextReducer);
     });
   }
-
+  
+  // store.async = {}
+  store['async'] = {};
+  
   return store;
 }
